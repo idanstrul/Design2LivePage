@@ -12,7 +12,7 @@ This project was an exercise performed as part of a web-design workshop of the C
 - Font Awesome 6.1.1
 
 ## Requested result:
-![Example screenshot](./pictures/for-readme/misterBlogger.png)
+![Requested result](./pictures/for-readme/misterBlogger.png)
 
 
 ## Project Status
