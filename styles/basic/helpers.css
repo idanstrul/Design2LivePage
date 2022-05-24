@@ -1,0 +1,13 @@
+/* flex - optional */
+
+/* list */
+
+.clean-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav-container.open{
+    right: 0;
+}

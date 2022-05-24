@@ -1,0 +1,71 @@
+.card button{
+    border-radius: 2em;
+    transition: padding 0.3s;
+}
+
+.card button::after{
+    content: '→';
+    position: absolute;
+    right: 1.25em;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card button:hover{
+    padding-inline-end: 3.25em;
+}
+
+.card button:hover::after{
+    opacity: 1;
+}
+
+.nav-btn{
+    color: var(--clr10);
+    border: none;
+    text-transform: uppercase;
+}
+
+.nav-btn.next::after{
+    content: ' →';
+}
+
+.nav-btn.previous::before{
+    content: '← ';
+}
+
+button.burger-menu {
+    font-size: 3em;
+    padding: 0;
+    line-height: 1;
+    background-color: inherit;
+    border: none;
+    color: var(--clr3);
+    min-width: 1em;
+    min-height: 1em;
+    position: relative;
+    font-family: fa-solid;
+    margin-inline-end: 10px;
+}
+
+.burger-menu::before{
+    content: '\f805';
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.burger-menu::after{
+    content: 'X';
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.burger-menu.open::before{
+    opacity: 0;
+}
+
+.burger-menu.open::after{
+opacity: 1;
+}

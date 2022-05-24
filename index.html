@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Blogin</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-container main-layout">
+            <div class="logo">Blogin</div>
+            <nav class="main-nav-container">
+                <ul class="clean-list main-nav">
+                    <li><a class="activated" href="#">Journal</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="burger-menu" onclick="toggleBurgerMenu(this)"></button>
+        </div>
+    </header>
+
+    <main class="main-content card-container main-layout">
+        <div class="card">
+            <img src="/pictures/1.jpg" alt="">
+            <div class="card-content">
+                <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <div class="artical-preview-text">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...</p>
+                </div>
+                <button>Continue Reading</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="pictures/2.jpg" alt="">
+            <div class="card-content">
+                <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <div class="artical-preview-text">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...</p>
+                </div>
+                <button>Continue Reading</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="pictures/3.jpg" alt="">
+            <div class="card-content">
+                <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <div class="artical-preview-text">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...</p>
+                </div>
+                <button>Continue Reading</button>
+            </div>
+        </div>
+        <nav class="card-nav">
+            <button class="nav-btn previous">Previous</button>
+            <button class="nav-btn next">Next</button>
+        </nav>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container main-layout">
+            <div class="logo">Blogin</div>
+            <small>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at Pixelhint.com</small>
+            <div class="social-media-controlls">
+                <ul class="clean-list">
+                    <li><a href="#" class="fa facebook"></a></li>
+                    <li><a href="#" class="fa twitter"></a></li>
+                    <li><a href="#" class="fa behance"></a></li>
+                    <li><a href="#" class="fa dribbble"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        function toggleBurgerMenu(elBurgerButton){
+            document.querySelector('.main-nav-container').classList.toggle('open');
+            elBurgerButton.classList.toggle('open')
+        }
+    </script>
+</body>
+
+</html>
