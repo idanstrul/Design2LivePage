@@ -21,9 +21,11 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <button class="burger-menu" onclick="toggleBurgerMenu(this)"></button>
+            <button class="burger-menu" onclick="toggleBurgerMenu()"></button>
         </div>
     </header>
+
+    <div class="menu-screen" onclick="toggleBurgerMenu()"></div>
 
     <main class="main-content card-container main-layout">
         <div class="card">
@@ -88,9 +90,10 @@
 
 
     <script>
-        function toggleBurgerMenu(elBurgerButton){
+        function toggleBurgerMenu(){
             document.querySelector('.main-nav-container').classList.toggle('open');
-            elBurgerButton.classList.toggle('open')
+            document.querySelector('button.burger-menu').classList.toggle('open');
+            document.querySelector('body').classList.toggle('open');
         }
     </script>
 </body>

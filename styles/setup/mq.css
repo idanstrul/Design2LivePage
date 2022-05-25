@@ -1,14 +1,33 @@
 @media (max-width: 670px) {
     ul.clean-list.main-nav {
         flex-direction: column;
+        position: relative;
+        top: 3em;
+        overflow: auto;
+        height: calc(100% - 3em);
     }
     
     nav.main-nav-container {
-        position: absolute;
+        position: fixed;
         background-color: #292929;
-        right: -15em;
-        top: 3em;
+        right: -20em;
+        top: 0;
         transition: right 0.3s;
+        height: 100vh;
+    }
+
+    .main-nav-container.open{
+        right: 0;
+    }
+
+    body.open{
+        overflow: hidden;
+    }
+
+    body.open .menu-screen{
+        background-color: #ffffff99;
+        cursor: pointer;
+        pointer-events: auto;
     }
     
     .header-container.main-layout {
@@ -39,7 +58,7 @@
     
 }
 
-@media (min-width: 670px) {
+@media (min-width: 671px) {
     .card img {
         width: 50%;
         padding-inline-start: 0;

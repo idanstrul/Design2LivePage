@@ -1,0 +1,9 @@
+.menu-screen{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    top: 0;
+    transition: background-color 0.3s;
+    pointer-events: none;
+}
